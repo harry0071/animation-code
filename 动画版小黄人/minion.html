@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>小黄人</title>
+    <link rel="stylesheet" type="text/css" href="css/prism-okaidia.min.css">
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        pre[class*="language-"]{border-radius: 0;margin: 0}
+        #speed{position: fixed;right: 0;}
+        #speed>p{text-align: center;position: absolute;top: -40px;right: 30px;font-size: 20px;}
+        #speed-range{transform: rotate(-90deg);}
+
+    </style>
+    <style type="text/css" id="mystyle"></style>
+</head>
+
+<body>
+	<pre class="language-css">
+        <div id="speed">
+            <p>速度：<span id="speed-value">40</span></p>
+            <input type="range" id="speed-range" value="40" min="10" max="100">
+        </div>
+        <code id="dom-code"></code>
+    </pre>
+	
+    <div id="minion">
+      <div id="body">
+        <div id="strap">
+          <div id="glass">
+            <div id="eye">
+              <div id="shine"></div>
+            </div>
+          </div>
+        </div>
+        <div id="hair"></div>
+      </div>
+      <div id="pants"></div>
+    </div>
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
