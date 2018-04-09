@@ -15,7 +15,7 @@
 
 // /* 先画出小黄人的身体 */
 // #minion {
-//   margin: 40px auto;
+//   margin: 10px auto;
 //   width: 260px;
 // }
 
@@ -47,8 +47,6 @@
 //   background-color: #fff;
 //   border: 12px solid #707070;
 //   height: 100px;
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
 //   border-radius: 50%;
 // }
 // #eye {
@@ -56,8 +54,6 @@
 //   background-color: #000;
 //   height: 40px;
 //   border: 13px solid #5b350a;
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
 //   border-radius: 50%;
 //   margin: 17px;
 // }
@@ -65,8 +61,6 @@
 //   background-color: #fff;
 //   width: 10px;
 //   height: 10px;
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
 //   border-radius: 50%;
 //   margin: 1px 5px;
 // }
@@ -84,7 +78,7 @@
 // `;
 
 /* 由于es6兼容性问题，上面的模板字符串用babel转成如下格式 */
-var cssCode = "\n/* \u4ECA\u5929\u6211\u6765\u7528\u4EE3\u7801\u753B\u4E00\u4E2A\u5C0F\u9EC4\u4EBA\n\n* \u9996\u5148\u7ED9\u6240\u6709\u5143\u7D20\u52A0\u4E0A\u8FC7\u6E21\u6548\u679C */\n* {\n  transition: .3s;\n}\n\n/* \u7ED9\u9875\u9762\u4E00\u4E2A\u80CC\u666F\u8272 */\nbody {\n  background-color: #343338;\n}\n\n/* \u5148\u753B\u51FA\u5C0F\u9EC4\u4EBA\u7684\u8EAB\u4F53 */\n#minion {\n  margin: 40px auto;\n  width: 260px;\n}\n\n#body {\n  height: 300px;\n  background-color: #ffe340;\n  width: 260px;\n  position: relative;\n}\n\n/* \u63A5\u7740\u52A0\u4E0A\u5C0F\u9EC4\u4EBA\u7684\u540A\u5E26\u88E4 */\n#pants {\n  height: 50px;\n  width: 260px;\n  background-color: #2f54a2;\n}\n\n/* \u7136\u540E\u753B\u5C0F\u9EC4\u4EBA\u7684\u773C\u775B */\n#strap {\n  top: 110px;\n  background-color: #1c1c1c;\n  width: 260px;\n  height: 50px;\n  position: absolute;\n}\n#glass {\n  margin: -30px auto 0;\n  width: 100px;\n  background-color: #fff;\n  border: 12px solid #707070;\n  height: 100px;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n}\n#eye {\n  width: 40px;\n  background-color: #000;\n  height: 40px;\n  border: 13px solid #5b350a;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  margin: 17px;\n}\n#shine {\n  background-color: #fff;\n  width: 10px;\n  height: 10px;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  margin: 1px 5px;\n}\n\n/* \u6700\u540E\u52A0\u4E0A\u5934\u53D1 */\n#hair {\n  background-color: #1c1c1c;\n  width: 90px;\n  height: 10px;\n  margin: 0 auto;\n}\n\n\n/* \u5B8C\u5DE5~~~~~~ */\n";
+var cssCode = "\n/* \u4ECA\u5929\u6211\u6765\u7528\u4EE3\u7801\u753B\u4E00\u4E2A\u5C0F\u9EC4\u4EBA\n\n* \u9996\u5148\u7ED9\u6240\u6709\u5143\u7D20\u52A0\u4E0A\u8FC7\u6E21\u6548\u679C */\n* {\n  transition: .3s;\n}\n\n/* \u7ED9\u9875\u9762\u4E00\u4E2A\u80CC\u666F\u8272 */\nbody {\n  background-color: #343338;\n}\n\n/* \u5148\u753B\u51FA\u5C0F\u9EC4\u4EBA\u7684\u8EAB\u4F53 */\n#minion {\n  margin: 10px auto;\n  width: 260px;\n}\n\n#body {\n  height: 300px;\n  background-color: #ffe340;\n  width: 260px;\n  position: relative;\n}\n\n/* \u63A5\u7740\u52A0\u4E0A\u5C0F\u9EC4\u4EBA\u7684\u540A\u5E26\u88E4 */\n#pants {\n  height: 50px;\n  width: 260px;\n  background-color: #2f54a2;\n}\n\n/* \u7136\u540E\u753B\u5C0F\u9EC4\u4EBA\u7684\u773C\u775B */\n#strap {\n  top: 110px;\n  background-color: #1c1c1c;\n  width: 260px;\n  height: 50px;\n  position: absolute;\n}\n#glass {\n  margin: -30px auto 0;\n  width: 100px;\n  background-color: #fff;\n  border: 12px solid #707070;\n  height: 100px;\n  border-radius: 50%;\n}\n#eye {\n  width: 40px;\n  background-color: #000;\n  height: 40px;\n  border: 13px solid #5b350a;\n  border-radius: 50%;\n  margin: 17px;\n}\n#shine {\n  background-color: #fff;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin: 1px 5px;\n}\n\n/* \u6700\u540E\u52A0\u4E0A\u5934\u53D1 */\n#hair {\n  background-color: #1c1c1c;\n  width: 90px;\n  height: 10px;\n  margin: 0 auto;\n}\n\n\n/* \u5B8C\u5DE5~~~~~~ */\n";
 
 var myStyle = document.getElementById('mystyle');
 var dompre = document.getElementsByTagName('pre')[0];
