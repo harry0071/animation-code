@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+code[class*="language-"], pre[class*="language-"] {
+    background: white;
+    color: black;
+    text-shadow: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+pre[class*="language-"]{
+    padding: 0;
+	height: 100vh;
+	overflow: auto;
+}
+.token.comment, .token.selector, .token.property, .token.punctuation {
+    color: black;
+}
